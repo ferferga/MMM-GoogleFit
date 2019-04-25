@@ -268,10 +268,10 @@ Module.register("MMM-GoogleFit", {
         label.innerHTML = days[i];
 
         if (this.config.stepCountLabel && steps[i] > 0) {
-          var s = steps[i] / 1000;
+          var s = steps[i];
           s = Number(s).toFixed(s < 10 ? 1 : 0);
 
-          label.innerHTML += "<br>" + s + "k";
+          label.innerHTML += "<br>" + s;
         }
 
         if (weights[i]) {
